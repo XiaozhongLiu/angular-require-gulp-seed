@@ -1,0 +1,6 @@
+/**
+ * UI logic
+ */
+define({
+
+});

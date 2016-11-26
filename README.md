@@ -1,2 +1,2 @@
 # angular-require-seed
-A seed front-end angularjs project modularized with requirejs.
+An angularjs seed project modularized with requirejs.
