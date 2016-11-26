@@ -1,4 +1,4 @@
-define(['app', 'lib'], function (app, lib) {
+define(['app', 'util'], function (app, util) {
     app.config([
         '$controllerProvider',
         '$compileProvider',
@@ -26,12 +26,12 @@ define(['app', 'lib'], function (app, lib) {
                 url: '/home',
                 controller: 'homeCtrl',
                 templateUrl: 'view/home.html',
-                resolve: lib.loadCtrl('home')
+                resolve: util.loadCtrl('home')
             }).state('another', {
                 url: '/another',
                 controller: 'anotherCtrl',
                 templateUrl: 'view/another.html',
-                resolve: lib.loadCtrl('another')
+                resolve: util.loadCtrl('another')
             });
         }]);
 });

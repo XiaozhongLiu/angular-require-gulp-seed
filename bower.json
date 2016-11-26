@@ -13,7 +13,7 @@
     "test",
     "tests",
     "node_modules",
-    "common/bower_components"
+    "bower_components"
   ],
   "dependencies": {
     "angular": "^1.5.9",

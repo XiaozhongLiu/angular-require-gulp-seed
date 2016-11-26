@@ -1,0 +1,20 @@
+{
+  "name": "angular-require-seed",
+  "homepage": "https://github.com/XiaozhongLiu/angular-require-seed#readme",
+  "description": "An angularjs seed project modularized with requirejs.",
+  "version": "0.0.1",
+  "license": "ISC",
+  "main": "app.js",
+  "author": "xiaozhong",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaozhongLiu/angular-require-seed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XiaozhongLiu/angular-require-seed/issues"
+  },
+  "dependencies": {
+    "ejs-mate": "^2.3.0",
+    "express": "^4.14.0"
+  }
+}
