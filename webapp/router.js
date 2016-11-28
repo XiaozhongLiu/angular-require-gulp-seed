@@ -24,14 +24,14 @@ define(['app', 'util'], function (app, util) {
             $urlRouterProvider.otherwise('/home');
             $stateProvider.state('home', {
                 url: '/home',
-                controller: 'homeCtrl',
+                controller: 'HomeCtrl',
                 templateUrl: 'view/home.html',
-                resolve: util.loadCtrl('home')
+                resolve: util.lazyLoad('home')
             }).state('another', {
                 url: '/another',
-                controller: 'anotherCtrl',
+                controller: 'AnotherCtrl',
                 templateUrl: 'view/another.html',
-                resolve: util.loadCtrl('another')
+                resolve: util.lazyLoad('another')
             });
         }]);
 });

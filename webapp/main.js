@@ -9,10 +9,14 @@ require.config({
         // configs
         app: 'app',
         router: 'router',
+        config: 'config',
 
         // pure scripts
         util: 'util',
         ui: 'ui',
+
+        // services
+        common: 'service/common',
 
         // controllers
         home: 'view/home',
@@ -33,6 +37,7 @@ require([
     'require',
     'angular',
     'jquery',
+    'config',
     'router'
 ], function (require, angular) {
     $(function () {
