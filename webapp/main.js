@@ -2,9 +2,9 @@ require.config({
     baseUrl: './',
     paths: {
         // common libs
-        jquery: 'common/jquery.min',
-        angular: 'common/angular.min',
-        uiRouter: 'common/angular-ui-router.min',
+        jquery: 'jquery.min',
+        angular: 'angular.min',
+        uiRouter: 'angular-ui-router.min',
 
         // configs
         app: 'app',
@@ -19,8 +19,8 @@ require.config({
         common: 'service/common',
 
         // controllers
-        home: 'view/home',
-        another: 'view/another'
+        home: 'ctrl/home',
+        another: 'ctrl/another'
     },
     shim: {
         angular: {

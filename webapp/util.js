@@ -49,7 +49,7 @@ define(function () {
         appendCSS: function (name, callback) {
             // load for only once
             if (loadedCSS.indexOf(name) == -1) {
-                var path = '../static/' + name + '.css';
+                var path = '../css/' + name + '.css';
 
                 var link = document.createElement("link");
                 link.href = path;

@@ -1,8 +1,11 @@
+var fs = require('fs');
+var config = require('../config');
+
+/**
+ * copy min libs to webapp/common/ folder.
+ */
 module.exports = function () {
 
-    // copy min libs to webapp/common/ folder.
-    var fs = require('fs');
-    var config = require('../config');
     var bowerFolder = 'bower_components/';
     var targetFolder = 'webapp/common/';
 
