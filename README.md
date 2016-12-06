@@ -1,5 +1,5 @@
-# angular-require-seed
-An angularjs seed project modularized with requirejs.
+# angular-require-gulp-seed
+An angularjs seed project modularized with requirejs and built with gulp.  
 Angular modules (like controllers, services, etc.) and static resources (like css, templates, etc.) are loaded on demand.
 
 #### Setup
