@@ -5,14 +5,16 @@ var annotate = require('gulp-ng-annotate');
 var sourcemaps = require('gulp-sourcemaps');
 
 var path = {
+    library: ['./webapp/library/*.js'],
     common: ['./webapp/common/*.js'],
-    app: ['./webapp/*.js'],
+    main: ['./webapp/main.js'],
     ngCtrl: ['./webapp/view/*.js'],
     ngLogic: ['./webapp/service/*.js'],
     all: function () {
         return Array.prototype.concat.apply(
+            this.library,
             this.common,
-            this.app,
+            this.main,
             this.ngCtrl,
             this.ngLogic
         );
@@ -20,38 +22,47 @@ var path = {
 };
 
 var tasks = [
+    'js.library',
     'js.common',
-    'js.app',
+    'js.main',
     'js.ngCtrl',
     'js.ngLogic'
 ];
 
 gulp.task(tasks[0], function () {
 
-    require('../util/build')();
+    require('../build/build')();
 
-    return gulp.src(path.common)
+    return gulp.src(path.library)
         .pipe(uglify())
         .pipe(gulp.dest('dist'));
 });
 
 gulp.task(tasks[1], function () {
-    return gulp.src(path.app, {base: 'webapp'})
-        .pipe(annotate())
+    return gulp.src(path.common)
+        //.pipe(annotate())
+        .pipe(concat('common.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist'));
 });
 
 gulp.task(tasks[2], function () {
+    return gulp.src(path.main)
+        //.pipe(annotate())
+        .pipe(uglify())
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task(tasks[3], function () {
     return gulp.src(path.ngCtrl)
         .pipe(annotate())
         .pipe(uglify())
         .pipe(gulp.dest('dist/ctrl'));
 });
 
-gulp.task(tasks[3], function () {
+gulp.task(tasks[4], function () {
     return gulp.src(path.ngLogic, {base: 'webapp'})
-        .pipe(annotate())
+        //.pipe(annotate())
         .pipe(uglify())
         .pipe(gulp.dest('dist'));
 });

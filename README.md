@@ -7,5 +7,5 @@ Angular modules (like controllers, services, etc.) and static resources (like cs
 ```javascript
 1. npm install
 2. bower install
-3. node app
+3. gulp
 ```

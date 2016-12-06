@@ -1,5 +1,5 @@
 define(['app'], function (app) {
-    app.register.factory('CommonSvc', function () {
+    app.register.factory('SampleSvc', function () {
         return {
             serviceMethod: function () {
                 return 'service method get called';

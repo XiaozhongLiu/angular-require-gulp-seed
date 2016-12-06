@@ -7,7 +7,7 @@ var config = require('../config');
 module.exports = function () {
 
     var bowerFolder = 'bower_components/';
-    var targetFolder = 'webapp/common/';
+    var targetFolder = 'webapp/library/';
 
     if (!fs.existsSync(targetFolder)) {
         fs.mkdirSync(targetFolder);

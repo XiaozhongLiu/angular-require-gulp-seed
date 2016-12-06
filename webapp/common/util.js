@@ -1,7 +1,7 @@
 /**
  * common logic
  */
-define(function () {
+define('util', [], function () {
 
     /**
      * list of cached css files

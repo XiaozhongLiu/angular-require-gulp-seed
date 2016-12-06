@@ -1,7 +1,7 @@
 /**
  * frontend config
  */
-define(function () {
+define('config', [], function () {
     window.config = {
 
         // base css file without the .js file extension

@@ -1,4 +1,4 @@
-define(['app', 'util'], function (app, util) {
+define('router', ['app', 'util'], function (app, util) {
     app.config([
         '$controllerProvider',
         '$compileProvider',

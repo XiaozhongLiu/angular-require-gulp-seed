@@ -7,16 +7,16 @@ require.config({
         uiRouter: 'angular-ui-router.min',
 
         // configs
-        app: 'app',
-        router: 'router',
-        config: 'config',
+        app: 'common',
+        config: 'common',
+        router: 'common',
 
         // pure scripts
-        util: 'util',
-        ui: 'ui',
+        ui: 'common',
+        util: 'common',
 
         // services
-        common: 'service/common',
+        sample: 'service/sample',
 
         // controllers
         home: 'ctrl/home',
