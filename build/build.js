@@ -2,7 +2,7 @@ var fs = require('fs');
 var config = require('../config');
 
 /**
- * copy min libs to webapp/common/ folder.
+ * copy min libs to webapp/library/ folder.
  */
 module.exports = function () {
 
